@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    background-color: #2571B7;
+    height: 80px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    line-height: 105px;
+    margin-left: 10vw;
+    width: 5px;
+    height: 26px;
+}
+
+.nav__links {
+    display: flex;
+    align-content: flex-end;
+    text-align: center;
+}
+
+.nav__btn {
+    width: 138px;
+    height: 37px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #002050;
+    border: none;
+    margin-right: 10vw;
+    margin-top: 22px;
+}
+
+.nav__btn:hover {
+    background-color: #545555;
+}
+
+.nav__links li {
+    line-height: 80px;
+    margin-right: 77px;
+}
+
+.nav__links li a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav__links li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.nav__hmb {
+    display: none;
+}
+
+.nav__btn_m {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav__hmb {
+        display: block;
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-left: 3vw;
+        cursor: pointer;
+    }
+    .nav__btn {
+        display: none;
+    }
+    .nav__btn_m {
+        display: block;
+        width: 138px;
+        height: 37px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #002050;
+        border: none;
+        margin-right: 3vw;
+        margin-top: 22px;
+    }
+    .nav__btn_m:hover {
+        background-color: #545555;
+    }
+    .nav__logo {
+        display: none;
+    }
+    .nav__links {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #2571B7;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    .nav__links li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    .nav__links li a {
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: black;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
