@@ -240,10 +240,10 @@ nav {
 }
 
 
-/* Site */
+/* Site mobile */
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     align-items: center;
     align-content: center;
@@ -251,29 +251,111 @@ nav {
 }
 
 .intro {
-    padding-top: 96px;
+    padding-top: 50px;
 }
 
 .intro p {
-    font-size: 20px;
+    font-size: 15px;
     color: #737373;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
-.intro spam {
+
+/* .intro spam {
     color: #F25022;
     font-weight: bold;
-}
+} */
 
 .titulocards h1 {
-    font-size: 40px;
+    font-size: 24px;
     color: #2571B7;
-    padding-top: 50px;
+    padding-top: 15px;
 }
 
 .titulocards p {
-    font-size: 20px;
+    font-size: 15px;
     color: #737373;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards__box {
+    width: 576px;
+    height: 120px;
+    background-color: #0072C6;
+    margin-bottom: 12px;
+}
+
+.cards__conteudo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+}
+
+.cards__conteudo__txt {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.cards__conteudo img {
+    padding-top: 2.5vh;
+}
+
+.cards__conteudo h3 {
+    margin-left: 15px;
+    margin-top: 21px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cards__conteudo p {
+    margin-left: 15px;
+    padding-top: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.cards__box:nth-child(2) {
+    background-color: #2C5898;
+}
+
+.cards__box:nth-child(3) {
+    background-color: #207245;
+}
+
+.cards__box:nth-child(4) {
+    background-color: #CB4A32;
+}
+
+.cards__box:nth-child(5) {
+    background-color: #733781;
+}
+
+.cards__box:nth-child(6) {
+    background-color: #00AFF0;
+}
+
+.cards__box:nth-child(7) {
+    background-color: #094AB2;
+}
+
+.cards__box:nth-child(8) {
+    background-color: #0073C6;
+}
+
+.cards__box:nth-child(9) {
+    background-color: #0093BE;
+}
+
+.cards__box:nth-child(10) {
+    background-color: #5558AF;
 }
