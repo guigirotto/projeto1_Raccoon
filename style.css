@@ -238,3 +238,42 @@ nav {
         margin-right: 8vw;
     }
 }
+
+
+/* Site */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.intro {
+    padding-top: 96px;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #737373;
+    padding-bottom: 50px;
+}
+
+.intro spam {
+    color: #F25022;
+    font-weight: bold;
+}
+
+.titulocards h1 {
+    font-size: 40px;
+    color: #2571B7;
+    padding-top: 50px;
+}
+
+.titulocards p {
+    font-size: 20px;
+    color: #737373;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
