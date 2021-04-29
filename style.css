@@ -151,7 +151,7 @@ nav {
 /* BANNER MOBILE*/
 
 .banner {
-    height: 100vh;
+    height: 90vh;
     width: auto;
     background-image: url(img/banner2.png);
     background-size: cover;
@@ -165,15 +165,16 @@ nav {
 .banner h1 {
     color: #fff;
     font-size: 42px;
-    padding-top: 220px;
+    padding-top: 25vh;
 }
 
 .banner h2 {
     color: #fff;
     font-size: 24px;
-    transform: translateY(calc(-50% - 1.5rem));
     font-weight: 500;
     letter-spacing: 1px;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
 }
 
 .banner__btn {
@@ -181,7 +182,6 @@ nav {
     text-decoration: none;
     border: none;
     color: #fff;
-    margin-top: 50px;
     width: 188px;
     height: 52px;
     font-size: 21px;
@@ -193,7 +193,7 @@ nav {
 }
 
 .banner__logo {
-    padding-top: 18vh;
+    padding-top: 15vh;
 }
 
 .banner__seta {
@@ -205,20 +205,23 @@ nav {
 
 @media (min-width: 800px) {
     .banner {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         text-align: center;
-        padding-left: 15vh;
+        padding-left: 10vw;
     }
     .banner h1 {
+        margin-top: 10vh;
         font-size: 80px;
     }
     .banner h2 {
         font-size: 32px;
         font-weight: 500;
-        margin-top: 2%;
+        padding-top: 3vh;
+        padding-bottom: 10vh;
     }
     .banner__btn {
         width: 266px;
@@ -229,7 +232,7 @@ nav {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding-top: 35vh;
+        margin-top: 20vh;
     }
     .banner__seta {
         display: block;
@@ -392,7 +395,8 @@ nav {
 
 .services__conteudo p {
     font-size: 13px;
-    padding-top: 10px
+    padding-top: 10px;
+    color: #737373;
 }
 
 .services__btn {
@@ -437,6 +441,42 @@ nav {
 .services__box:nth-of-type(3) .services__btn:hover {
     background-color: #FFB900;
     color: black;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#pg4 h3 {
+    font-size: 24px;
+    color: #2571B7;
+    font-weight: 700;
+    padding-top: 70px;
+}
+
+.box__box {
+    width: 100%;
+    height: 150px;
+    border: 3px solid #DEDEDE;
+}
+
+.box__conteudo {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.box__conteudo h4 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #F25022;
+}
+
+.box__conteudo p {
+    font-size: 14px;
+    color: #737373;
 }
 
 
@@ -485,7 +525,9 @@ nav {
         margin-right: 12px;
     }
     .services {
+        width: 100%;
         display: flex;
+        justify-content: space-around;
         padding-top: 70px;
     }
     #pg3 h3 {
@@ -515,10 +557,8 @@ nav {
         border: 2px solid;
     }
     .services__box {
-        width: 40%;
         display: flex;
         flex-direction: column;
-        align-content: center;
         text-align: center;
         align-items: center;
     }
@@ -534,5 +574,31 @@ nav {
         height: 4px;
         background-color: #DEDEDE;
         margin: 0 auto;
+    }
+    .services__dividir {
+        display: none;
+    }
+    #pg4 h3 {
+        font-size: 40px;
+        padding-top: 90px;
+        padding-bottom: 20px;
+    }
+    .box {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .box__box {
+        width: 40%;
+        height: 224px;
+    }
+    .box__conteudo {
+        width: 80%;
+    }
+    .box__conteudo h4 {
+        font-size: 20px;
+        padding-top: 6vh;
+    }
+    .box__conteudo p {
+        font-size: 16px;
     }
 }
