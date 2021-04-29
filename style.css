@@ -479,6 +479,23 @@ nav {
     color: #737373;
 }
 
+.imgpessoas {
+    margin-top: 70px;
+    width: 100%;
+    background: url(img/pm.png) no-repeat;
+    background-size: cover;
+}
+
+.imgpessoas h4 {
+    width: 85%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    padding: 6% 0;
+}
+
 
 /* SITE DESKTOP*/
 
@@ -600,5 +617,17 @@ nav {
     }
     .box__conteudo p {
         font-size: 16px;
+    }
+    .imgpessoas {
+        background: url(img/pd.png) no-repeat;
+        background-size: cover;
+        height: 40vh;
+        background-position: center;
+        margin-top: 150px;
+    }
+    .imgpessoas h4 {
+        font-size: 48px;
+        line-height: 70px;
+        padding: 5% 0;
     }
 }
