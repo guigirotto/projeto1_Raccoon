@@ -241,6 +241,9 @@ nav {
         color: #fff;
         padding-bottom: 0px;
     }
+    .banner__seta:hover {
+        filter: brightness(0) saturate(50%);
+    }
     .banner__logo {
         padding-top: 0;
         margin-right: 8vw;
