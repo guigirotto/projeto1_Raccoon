@@ -84,7 +84,7 @@ nav {
 
 /* NAB MOBILE */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .nav__hmb {
         display: block;
         font-size: 30px;
@@ -115,16 +115,15 @@ nav {
         display: none;
     }
     .nav__links {
-        position: fixed;
+        position: absolute;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: #2571B7;
         top: 80px;
-        left: -100%;
         text-align: center;
         display: flex;
         flex-direction: column;
-        transition: all .5s;
+        transform: translateX(100%);
     }
     .nav__links li {
         display: block;
@@ -142,8 +141,8 @@ nav {
         background: none;
         color: black;
     }
-    #check:checked~ul {
-        left: 0;
+    .nav-active {
+        transform: translateX(0%);
     }
 }
 
@@ -251,15 +250,48 @@ nav {
 }
 
 
-/* Site mobile */
+/*containers*/
+
+
+/*mobile*/
 
 .container {
-    width: 90%;
+    padding: 0 20px;
     margin: 0 auto;
     align-items: center;
     align-content: center;
     text-align: center;
 }
+
+
+/*tablet*/
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 50px;
+    }
+}
+
+
+/*desk peq*/
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 80px;
+    }
+}
+
+
+/*desk grande*/
+
+@media (min-width: 1440px) {
+    .container {
+        padding: 0 calc((100vw - 1350px)/ 2);
+    }
+}
+
+
+/* Site mobile */
 
 .intro {
     padding-top: 50px;
@@ -418,7 +450,8 @@ nav {
 
 .services__btn:hover {
     background-color: #7FBA00;
-    color: black
+    color: black;
+    border-color: #7FBA00;
 }
 
 .services__dividir {
@@ -467,6 +500,11 @@ nav {
     width: 100%;
     height: 150px;
     border: 3px solid #DEDEDE;
+    border-bottom: none;
+}
+
+.box__box:last-child {
+    border-bottom: 3px solid #DEDEDE;
 }
 
 .box__conteudo {
@@ -578,9 +616,6 @@ footer p {
 /* SITE DESKTOP*/
 
 @media (min-width: 800px) {
-    .container {
-        width: 70%;
-    }
     .intro {
         padding-top: 96px;
     }
@@ -698,6 +733,11 @@ footer p {
         width: 40%;
         height: auto;
         padding-bottom: 22px;
+        border-bottom: 3px solid #DEDEDE;
+        border-right: none;
+    }
+    .box__box:last-child {
+        border-right: 3px solid #DEDEDE;
     }
     .box__conteudo {
         width: 75%;
@@ -738,8 +778,8 @@ footer p {
         font-size: 28px;
     }
     .footer__logo img {
-        width: 15%;
         padding-bottom: 10px;
+        padding-right: 20px;
     }
     footer p {
         font-size: 14px;
